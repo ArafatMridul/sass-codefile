@@ -1,0 +1,107 @@
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 700;
+  line-height: 1.1;
+  margin-top: 0;
+}
+
+h1 {
+  font-size: 1.75rem;
+}
+@media (min-width: 43.75em) {
+  h1 {
+    font-size: 2.25rem;
+  }
+}
+@media (min-width: 56.25em) {
+  h1 {
+    font-size: 2.625rem;
+  }
+}
+
+p {
+  margin-top: 0;
+}
+
+a,
+a:visited,
+a:active {
+  text-decoration: none;
+}
+
+:root {
+  --background-color: hsl(0, 0%, 26%);
+  --text-color: hsl(0, 0%, 100%);
+}
+
+.green {
+  background-color: hsl(120, 100%, 30%) !important;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto;
+  gap: 2.5rem;
+  max-width: 1000px;
+  margin-inline: auto;
+}
+@media (min-width: 56.25em) {
+  .grid {
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto;
+  }
+}
+.grid__main, .grid__sidebar {
+  padding: 2.5rem;
+}
+.grid__main {
+  background-color: hsl(240, 99%, 33%);
+}
+@media (min-width: 43.75em) {
+  .grid__main {
+    background-color: hsl(120, 93%, 17%);
+  }
+}
+@media (min-width: 56.25em) {
+  .grid__main {
+    background-color: hsl(39, 92%, 28%);
+  }
+}
+.grid__sidebar {
+  text-align: left;
+}
+@media (max-width: 56.24875em) {
+  .grid__sidebar {
+    text-align: center;
+  }
+}
+@media (max-width: 43.7845em) {
+  .grid__sidebar {
+    text-align: right;
+  }
+}
+.grid__widget {
+  background-color: hsl(300, 100%, 30%);
+  padding: 1rem;
+}/*# sourceMappingURL=style.css.map */
